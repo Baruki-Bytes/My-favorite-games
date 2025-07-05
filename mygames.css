@@ -44,19 +44,77 @@ a{
 .cards{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    gap: 20px;
     margin-top: 40px;
 }
 
-.cards-games, #cyber-img{
-    width: 170px;
+.cards-games{
+    max-width:200px;
+    height: 600px;
+    overflow: hidden;
+    margin-left: 20px;
+    display: flex;
+    transition: all ease 500ms;
+}
+
+.cards-games:hover{
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.content-extra{
+    width: 300px;
+    height: 600px;
+    background-color: #FFFA01;
+}
+
+.img-geral{
+    width: 200px;
     height: 600px;
     object-fit: cover;
 }
 
-#cyber-img{
-    object-position: -325px;
+#cyber-V{
+    object-position: -280px;
 }
 
+#Katana-img{
+    object-position: -380px;
+}
+
+#Katana{
+    background-color: #18EDFD;
+}
+
+#rd2-img{
+    object-position: -300px;
+}
+
+#rd2-color{
+    background-color: red;
+}
+
+#under-img, #ds3-img{
+    object-position: -172px;
+}
+
+#under-color{
+    background-color: rgb(19, 19, 19);
+}
+
+#ds3-color{
+    background-color:#c0ab55;
+}
+
+#hollow-img{
+    object-position: -215px;
+}
+
+#hollow-color{
+    background-color: #0b1616;
+}
+
+#hotline-color{
+    background-color: #4B5494;
+}
